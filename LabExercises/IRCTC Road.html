@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IRCTC Road</title>
+
+	<style type="text/css">
+		#header {
+			position: fixed;
+			width: 100%;
+			height: 80px;
+			border: 3px solid black;
+			top: 0;
+			left: 0;
+			background-color: white;
+		}
+
+		#headerlogo {
+			position: fixed;
+			left: 450px;
+			height: 78px;
+			width: 78px;
+		}
+
+		#header1 {
+			position: fixed;
+			left: 540px;
+			top: 10px;
+		}
+
+		#header2 {
+			position: fixed;
+			left: 1030px;
+			top: 20px;
+		}
+
+		#firstblock {
+			padding-top: 86px;
+			text-align: center;
+			height: 33px;
+			font-size: 20px;
+		}
+
+		#menu {
+			padding: 10px;
+			color: #0027ff
+		}
+
+		#menuselected {
+			padding: 10px;
+			background-color: #0027ff;
+			color: white;
+		}
+
+		#secondblock {
+			text-align: center;
+			background-color: #3163FF;
+			height: 80px;
+			padding:20px;
+			line-height: 200%;
+			font-size: 20px;
+		}
+
+		.but1 {
+			background-color: #ffda31;
+		}
+
+		#busimg {
+			width: 100%;
+		}
+
+		#thirdblock {
+			background-color: #2e00a9;
+			height: 300px;
+		}
+
+		#thirdblocksec1 {
+			text-align: center;
+			color: white;
+		}
+
+		#thirdblocksec2 {
+			position: absolute;
+			margin-left: 510px;
+			margin-top: 80px;
+		}
+
+		#logobot {
+			height: 100px;
+			width: 100px;
+			background-color: white;
+		}
+
+		#thirdblocksec3 {
+			position: absolute;
+			margin-top: 0px;
+			margin-left: 630px;
+		}
+
+		#thirdblocksec4 {
+			position: absolute;
+			margin-left: 1050px;
+			margin-top: 70px;
+			font-size: 20px;
+		}
+
+		#downloadbut1 {
+			border: 1px solid white;
+			background-color: #0093ff;
+			padding: 5px;
+		}
+
+		#downloadbut2 {
+			border: 1px solid white;
+			background-color: #00e4ff;
+			padding: 5px;
+			margin-top: 5px;
+		}
+
+		#fourthblock {
+			text-align: center;
+			color: white;
+			background-color: #b23cff;
+			border:3px solid white;
+			height: 60px;
+			padding-top: 
+		}
+
+		#fourthblocksec1 {
+			padding-top: -20px;
+		}
+
+		.logopng {
+			height: 50px;
+			width: 50px;
+		}
+
+		#fifthblock {
+			background-color: #00076c;
+			color: white;
+			height: 280px;
+		}
+
+		#fifthblocksec1 {
+			text-align: center;
+		}
+
+		#footerhead {
+			font-size: 30px;
+		}
+
+		#fifthblocksec2 {
+			position: absolute;
+			margin-left: 370px;
+		}
+
+		#fifthblocksec3 {
+			position: absolute;
+			margin-left: 520px;
+		}
+
+		#fifthblocksec4 {
+			position: absolute;
+			margin-left: 870px;
+		}
+
+		#fifthblocksec5 {
+			position: absolute;
+			margin-left: 1200px;
+		}
+
+		.footersubhead {
+			font-size: 20px;
+		}
+
+		.footer {
+			font-size: 15px;
+		}
+
+		
+	</style>
+
+</head>
+<body>
+	<div id="header">
+		<img src="https://seeklogo.com/images/I/irctc-india-logo-5A5DFE2FB1-seeklogo.com.png" id="headerlogo">
+		<div id="header1">
+			<h3>Indian Railway Catering and Tourism Corporation Limited</h3>
+		</div>
+		<div id="header2">
+			Call-Tell: 1800 110 139 | 
+			Call-No: 0755 - 6698100/4090400
+			<br>
+			Mail: roads@irctc.co.in
+			<br>
+			<span>Sign in</span>
+		</div>
+	</div>
+
+	<div id="firstblock">
+		<span id="menuselected">Roads</span>
+		<span id="menu">Flights</span>
+		<span id="menu">Tour Packages</span>
+		<span id="menu">Tourist Train</span>
+		<span id="menu">IRCTC Deals</span>
+		<span id="menuselected">Refunds</span>
+		<span id="menuselected">Covid19 Advisory</span>
+		<span id="menuselected">Web Check In</span>
+	</div>
+
+	<div id="secondblock">
+		<form>
+
+			<span>
+				<label for="oneway">
+					<input id="oneway"type="radio" name="One Way">
+					One Way
+				</label>
+				<label for="roundtrip"> 
+					<input id="roundtrip" type="radio" name="Round Trip">
+					Round Trip
+				</label>
+				<label for="multicity">
+					<input id="multicity" type="radio" name="Multi City">
+					Multi City
+				</label>
+			</span>
+			<input type="checkbox" name="LTC"> LTC 
+			<input type="checkbox" name="Defence Force"> Defence force
+			<input type="button" name="Reschedule" value="RESCHEDULE" class="but1">
+			<input type="button" name="Credit Shell" value="CREDIT SHELL" class="but1">
+
+			<br>
+
+			<select name="From">
+				<option>From</option>
+				<option>Delhi</option>
+				<option>Bangalore</option>
+				<option>Mumbai</option>
+				<option>Chennai</option>
+				<option>Chandigarh</option>
+				<option>Kolkata</option>
+				<option>Goa</option>
+			</select>
+			<select name="To" value="To">
+				<option>To</option>
+				<option>Delhi</option>
+				<option>Bangalore</option>
+				<option>Mumbai</option>
+				<option>Chennai</option>
+				<option>Chandigarh</option>
+				<option>Kolkata</option>
+				<option>Goa</option>
+			</select>
+			<select name="DeptDate">
+				<option>Departure Date</option>
+				<option>1/Jan/2020</option>
+				<option>1/Mar/2020</option>
+				<option>1/May/2020</option>
+				<option>1/Jul/2020</option>
+				<option>1/Sep/2020</option>
+				<option>1/Nov/2020</option>
+			</select>
+			<select name="ReturnDate">
+				<option>Return Date</option>
+				<option>1/Jan/2020</option>
+				<option>1/Mar/2020</option>
+				<option>1/May/2020</option>
+				<option>1/Jul/2020</option>
+				<option>1/Sep/2020</option>
+				<option>1/Nov/2020</option>
+			</select>
+			<input type="text" name="Traveller Num" placeholder="Number of Traveller">
+			<input type="button" name="Search" value="Search">
+
+		</form>
+	</div>
+
+	<div>
+		<img src="https://image.made-in-china.com/2f0j00RtPYCVQcFEbL/Slk6122gt-Coach-Tourist-Bus-New-Bus-Luxury-Bus.jpg" id="busimg">
+	</div>
+
+	<div id="thirdblock">
+
+		<div id="thirdblocksec1">
+			<h2>Get App</h2>
+			Choose your platform and get started!
+			<br>
+			------------------------------ ~~~~ ------------------------------
+			<br>
+		</div>
+
+		<div id="thirdblocksec2">
+			<img src="https://seeklogo.com/images/I/irctc-india-logo-5A5DFE2FB1-seeklogo.com.png" id="logobot">
+		</div>
+
+		<div id="thirdblocksec3">
+			<img src="https://www.air.irctc.co.in/assets/img/MobileApp.png" id="mobopic">
+		</div>
+	
+		<div id="thirdblocksec4">
+			<div id="downloadbut1">
+				Download it from <br> Google Play
+			</div>
+			<div id="downloadbut2">
+				Download it from <br> App Store
+			</div>
+		</div>
+	</div>
+
+	<div id="fourthblock">
+		<span id="fourthblocksec1">Get Connected with us on social networks</span> 
+		<img class="logopng" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png">
+		<img class="logopng" src="https://pngimg.com/uploads/twitter/twitter_PNG28.png">
+		<img class="logopng" src="https://cdn.freebiesupply.com/logos/large/2x/pinterest-circle-logo-png-transparent.png">
+		<img class="logopng" src="https://www.freepnglogos.com/uploads/instagram-logos-png-images-free-download-2.png">
+		<img class="logopng" src="https://cdn.freebiesupply.com/logos/large/2x/myspace-logo-png-transparent.png">
+		<img class="logopng" src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/youtube-512.png">
+		<img class="logopng" src="https://img.pngio.com/ico-media-photo-add-share-social-tumblr-icon-tumblr-icon-png-512_512.png">
+	</div>
+
+	<div id="fifthblock">
+		<div id="fifthblocksec1">
+			<br>
+			<span id="footerhead">
+				Useful Links
+				<br>
+				------------------------------ ~~~~ ------------------------------
+			</span>
+		</div>
+		<div id="fifthblocksec2">
+			<span class="footersubhead">Services<br><br></span>
+			<span class="footer">
+				Retiring Rooms<br>
+				Hotels<br>
+				Lounge<br>
+				Flights<br>
+				E-Catering<br>
+				E-Ticket
+			</span>
+		</div>
+		<div id="fifthblocksec3">
+			<span class="footersubhead">Popular Domestic Routes in India<br><br></span>
+			<span class="footer">
+				Delhi to Mumbai<br>
+				Mumbai to Delhi<br>
+				Bangalore to Delhi<br>
+				Delhi to Goa
+			</span>
+		</div>
+		<div id="fifthblocksec4">
+			<span class="footersubhead">Popular international Routes in India<br><br></span>
+			<span class="footer">
+				Mumbai to Dubai Flights<br>
+				Mumbai to Singapore Flights<br>
+				Delhi to Dubai Flights<br>
+				Delhi to Singapore Flights
+			</span>
+		</div>
+		<div id="fifthblocksec5">
+			<span class="footersubhead">About Us<br><br></span>
+			<span class="footer">
+				About Us<br>
+				FAQ<br>
+				Newsletter<br>
+				Blog Check<br>
+				Terms & Conditions<br>
+				Pressroom<br>
+				IRCTC Deals
+			</span>
+		</div>
+	</div>
+
+</body>
+</html>
