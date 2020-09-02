@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+
+	<title>Form Validation using JavaScript
+	</title>
+	<script>
+		function validate()
+		{
+			var name= document.stud_form.name;
+            var email= document.stud_form.email;
+            var mobile= document.stud_form.mobile;
+            var gender= document.stud_form.gender;
+            var batch= document.stud_form.batch;
+			if (name.value.length<=0) 
+			{
+				alert("Name is required");
+				name.focus();
+				return false;
+			}
+			if (mobile.value.length<=0) 
+			{
+				alert("Mobile Number is required");
+				mobile.focus();
+				return false;
+			}
+			if (email.value.length<=0) 
+			{
+				alert("Email is required");
+				email.focus();
+				return false;
+			}
+			
+			if (gender.value.length<=0) 
+			{
+				alert("Gender is required");
+				gender.focus();
+				return false;
+			}
+			if (course.value=="Select Course")
+			{
+				alert("Course is required");
+				course.focus();
+				return false;
+			}
+			var check=false;
+			for (var i = batch.length - 1; i >= 0; i--) {
+				if(batch[i].checked)
+				{
+					check=true;
+				}
+			}
+			if (check==false) {
+				alert("Batch is required");
+				return false;
+			}
+			return false;
+		}
+		function validationString(id)
+		{
+          var element=document.getElementById(id);
+          var regExp= /^[a-zA-Z ]+$/;
+          if (!regExp.test(element.value)) {
+                alert("Enter string value"); 
+                element.style.border="2px solid red";
+                return false;
+          }
+          element.style.border="2px solid green";
+		}function validationNumber(id)
+		{
+          var element=document.getElementById(id);
+          var regExp= /^[0-9]{10}$/;
+          if (!regExp.test(element.value)) {
+                alert("Enter Number only and maximum of 10 digits"); 
+                element.style.border="2px solid red";
+                return false;
+          }
+          element.style.border="2px solid green";
+		}
+		function validationEmail(id)
+		{
+          var element=document.getElementById(id);
+          var regExp= /^[a-zA-Z0-9._]+@[a-zA-Z0-9._]+\.[a-zA-Z]{2,4}$/;
+          if (!regExp.test(element.value)) {
+                alert("Enter valid Email"); 
+                element.style.border="2px solid red";
+                return false;
+          }
+          element.style.border="2px solid green";
+		}
+	</script>
+<style type="text/css">
+	.headingone
+	{
+	background-color: red;
+	padding: 1px;
+	font-size: 3vw;
+    }
+	body{
+            background-image: url(https://timstrifler.com/wp-content/uploads/sites/9/2015/11/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+	input[type="text"]{
+		width: 250px;
+	}
+	input[type="submit"],input[type="reset"]{
+		width: 100px;
+		height: 30px;
+	}
+	form
+		 {
+           width: 450px;
+           text-align: center;
+           margin: 20px auto; 
+		}
+		td:first-child{
+			text-align: right;
+			font-weight: bold;
+
+		}
+		td:last-child{
+			text-align: left;
+		}
+		td{
+			padding: 10px;
+		}
+</style>
+</head>
+<body>
+<center>
+	<h1 class="headingone">Form Validation using JavaScript</h1>
+</center>
+<hr>
+<form method="" action="" name="stud_form" onsubmit="return validate()">
+<h2>Student Registration Form</h2>
+<table>
+
+	<tr>
+<td><label>Name: </label></td>
+<td>
+	<input type="text" name="name" id="name" onblur="validateString(this.id)">
+</td>	
+    </tr>
+    <tr>
+<td><label>Mobile: </label></td>
+<td>
+	<input type="text" name="mobile" id="mobile" onblur="validationNumber(this.id)">
+</td>	
+    </tr>
+    <tr>
+<td><label>Email: </label></td>
+<td>
+	<input type="text" name="email" id="email" onblur="validationEmail(this.id)">
+</td>	
+    </tr>
+    <tr>
+<td><label>Gender: </label></td>
+<td>
+	<input type="radio" name="gender" value="Male"><strong>Male</strong> 
+	<input type="radio" name="gender" value="Female"><strong>Female</strong> 
+</td>	
+    </tr>
+    <tr>
+<td><label>Course: </label></td>
+<td>
+	<select name="course">
+		<option value="HTML">HTML</option>
+		<option value="CSS">CSS</option>
+		<option value="JavaScript">JavaScript</option>
+	</select>
+</td>	
+    </tr>
+    <tr>
+<td><label>Select Batch: </label></td>
+<td>
+	<input type="Checkbox" name="batch" value="Morning"><strong>Morning</strong> 
+	<input type="Checkbox" name="batch" value="AfterNoon"><strong>AfterNoon</strong>
+	<input type="Checkbox" name="batch" value="Evening"><strong>Evening</strong>
+</td>	
+    </tr>
+    <tr>
+    	<td colspan="2" style="position: relative;left: 114px;">
+	<input type="submit" name="submit" value="submit">
+	<input type="reset" name="reset" value="reset">
+</td>	
+    </tr>
+
+
+</table>
+</form>
+</body>
+</html>
